@@ -245,7 +245,7 @@
 
     "What questions does a DBS Mission Statement answer?": [
         "Why is the DBS required?",
-        "Which part of business or domain is  covered?",
+        "Which part of business or domain  is covered?",
         "What stakeholders (user groups) are involved?",
         "Is it the development of a fully new or refinement of an existing DBS?",
         "How will efficiency and effectiveness be measured?"
@@ -263,9 +263,9 @@
     ],
 
     "How would a Multi-Valued Dependency be denoted?": [
-        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆RX. Then r(R) satisfies the multi-valued dependency X-≫Y if: ∀t1, t2∈ r: t1(X)=t2(X) ∃t3∈r: t3(X)=t1(X)=t2 (X) ∧ t3(Y)=t1(Y) ∧ t3(Z)=t2(Z)",
-        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆RX. Then r(R) satisfies the multi-valued dependency X-≫Y if for every combination of the values on X there exist more that one value combination on Y.",
-        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆RX. Then r(R) satisfies the multi-valued dependency X-≫Y if Y and Z have independent sets of values wrt the values of X."
+        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆R\\X. Then r(R) satisfies the multi-valued dependency X-≫Y if: ∀t₁, t₂∈ r: t₁(X)=t₂(X) ∃t₃∈r: t₃(X)=t₁(X)=t₂ (X) ∧ t₃(Y)=t₁(Y) ∧ t₃(Z)=t₂(Z)",
+        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆R\\X. Then r(R) satisfies the multi-valued dependency X-≫Y if for every combination of the values on X there exist more that one value combination on Y.",
+        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆R\\X. Then r(R) satisfies the multi-valued dependency X-≫Y if Y and Z have independent sets of values wrt the values of X."
     ],
 
     "What is valid for denoting the 1st Normal Form?": [
@@ -273,7 +273,7 @@
     ],
 
     "How would Join Dependency be denoted?": [
-        "Let r(R) be a relation with schema R, R be the union of Ri⊆R, i=1...n. Thenrelation r(R) satisfies the join dependency (JD)  ∗[R1,…,Rn] if r could be losslessly decomposed onto R1,…,Rn, i.e. r(R)=ΠR1(r(R)) ⋈…⋈ ΠRn(r(R)).",
+        "Let r(R) be a relation with schema R, R be the union of Ri⊆R, i=1...n. Then relation r(R) satisfies the join dependency (JD)  ∗[R1,…,Rn] if r could be losslessly decomposed onto R1,…,Rn, i.e. r(R)=Πᵣ₁(r(R)) ⋈…⋈ Πᵣₙ(r(R)).",
         "Join Dependency is the dependency satisfied by a relation r with schema R if r could be losslessly decomposed onto a number of its dsstinct projections"
     ],
 
@@ -296,7 +296,7 @@
     ],
 
     "How would Loseless Decomposition be denoted?": [
-        "Let r(R) be a relation with schema R, X,Y,Z be pair-wise disjoint sets: X,Y,Z⊂R, r₁(XY)=πXY(r(R)), r₂(XZ)=πXZ(r(R)). Then r(R) could be loselessly decomposed into r₁(XY) and r₂(XZ) if r(R)=r₁(XY) ⋈ r₂(XZ), where ⋈ is the natural join operation."
+        "Let r(R) be a relation with schema R, X,Y,Z be pair-wise disjoint sets: X,Y,Z⊂R, r₁(XY)=Πₓᵧ(r(R)), r₂(XZ)=Πₓ𝓏(r(R)). Then r(R) could be loselessly decomposed into r₁(XY) andr₂(XZ) if r(R)=r₁(XY) ⋈ r₂(XZ), where ⋈ is the natural join operation."
     ],
 
 
@@ -367,7 +367,8 @@
     ],
     "What is valid for denoting Partial Dependency?": [
         "Let r(R) be a relation with schema R; X,Y⊂R",
-        "Let X→Y be an FD valid for schema R of r(R), If there exists X'⊂X:X′→Y is also an FD valid for schema R of r(R) then Y is partially dependent on X, otherwise Y is fully dependent on X"
+        "Let X→Y be an FD valid for schema R of r(R)",
+        "If there exists X'⊂X:X′→Y is also an FD valid for schema R of r(R) then Y is partially dependent on X, otherwise Y is fully dependent on X"
     ],
 
     "How would the Graph Data Model be characterized?": [

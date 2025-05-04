@@ -17,12 +17,12 @@ function normalizeWhitespace(text) {
 }
 
 function normalizeQuestion(text) {
-  return normalizeWhitespace(
-    text
-      .replace(/[\s\u00A0\u202F\u200B]*[-–—]?\s*please.*$/i, '')
-      .replace(/\s*\([\s\S]*?\)$/i, '')
-  );
-}
+    return normalizeWhitespace(
+      text
+        .replace(/[\s\u00A0\u202F\u200B]*[-–—]?\s*please.*$/i, '')
+        .replace(/\s*\([\s\S]*?\)$/i, '')
+    );
+  }
 
 function autoAnswer() { 
   const questions = document.querySelectorAll('div.que');
@@ -42,6 +42,7 @@ function autoAnswer() {
       if (!label) return;
 
       let labelText = label.innerText || '';
+      labelText = labelText.trim();
       labelText = normalizeWhitespace(labelText.replace(/^[a-z]\.\s*/i, ''));
 
       if (correctAnswers.some(ans => normalizeWhitespace(ans) === labelText)) {
