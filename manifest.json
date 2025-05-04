@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "LMS Auto Answer",
+    "description": "Automatically fills answers on LMS tests",
+    "version": "1.0",
+    "permissions": ["scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://learn.ucu.edu.ua/mod/quiz/*"],
+        "js": ["autoAnswer.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["answers.json"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "action": {
+      "default_title": "LMS Auto Answer"
+    }
+  }
+  
