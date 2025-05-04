@@ -245,8 +245,8 @@
 
     "What questions does a DBS Mission Statement answer?": [
         "Why is the DBS required?",
-        "Which part of business or domain  is covered?",
-        "What stakeholders (user groups) are involved?,",
+        "Which part of business or domain is  covered?",
+        "What stakeholders (user groups) are involved?",
         "Is it the development of a fully new or refinement of an existing DBS?",
         "How will efficiency and effectiveness be measured?"
     ],
@@ -296,8 +296,9 @@
     ],
 
     "How would Loseless Decomposition be denoted?": [
-        "Let r(R) be a relation with schema R, X,Y,Z be pair-wise disjoint sets: X,Y,Z⊂R, r1(XY)=ΠXY(r(R)), r2(XZ)=ΠXZ(r(R)). Then r(R) could be loselessly decomposed into r1(XY) andr2(XZ) if r(R)=r1(XY) ⋈ r2(XZ), where ⋈ is the natural join operation."
+        "Let r(R) be a relation with schema R, X,Y,Z be pair-wise disjoint sets: X,Y,Z⊂R, r₁(XY)=πXY(r(R)), r₂(XZ)=πXZ(r(R)). Then r(R) could be loselessly decomposed into r₁(XY) and r₂(XZ) if r(R)=r₁(XY) ⋈ r₂(XZ), where ⋈ is the natural join operation."
     ],
+
 
     "What are the foci of the Analysis step within requirements elicitation?": [
         "Within a Task - operations",
@@ -329,7 +330,7 @@
     ],
 
     "How would 4NF be denoted?": [
-        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆RX. Relation r(R) is in 4NF wrt the set S of FD-s and MVD-s if: (i) r(R) is in 1NF; and (ii) All non-trivial MVD-s from S, satisfied by r(R), are FD-s on candidate keys in R."
+        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆R\\X. Relation r(R) is in 4NF wrt the set S of FD-s and MVD-s if: (i) r(R) is in 1NF; and (ii) All non-trivial MVD-s from S, satisfied by r(R), are FD-s on candidate keys in R."
     ],
 
     "How would the 3d Normal Form be denoted?": [
@@ -349,7 +350,7 @@
     ],
 
     "How would you denote a transitive dependency informally?": [
-        "Let r(R) be a relation with schema R. Attribute C from R transitively depends on the attribute A from R through the attribute B from R if B functionally depends on A and C functionally depends on B"
+        "Let r(R) be a relation with schema R. Attribute C from R transitively depends on the attribute A from R through the attribute B from R if B functionally depends on A and C functionally depends on B."
     ],
 
     "How would the 5th Normal Form be denoted?": [
