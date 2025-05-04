@@ -1,0 +1,570 @@
+{
+    "What is a conceptual model": [
+        "A mapping of implicit domain interpretations (mental structures) – interlinked concepts – into commonly agreed symbols and schemas – term graphs",
+        "An explicit description of implicit mental structures that is in a semantic agreement between the stakeholders"
+    ],
+    "What are the modelling elements used in Conceptual Modelling?": [
+        "An Entity Type - a container for entities having the same defining properties but with different values",
+        "An Entity - an element that corresponds to a real-world object or process",
+        "A Relationship - a property that reflects the connection between different Entity Types or Entities",
+        "An Attribute - a property of an Entity Type, Entity, or Relationship"
+    ],
+    "What are the valid steps in a Conceptual Modelling Workflow?": [
+        "Elicit requirements",
+        "Specify the primary entity type",
+        "Define more entity types",
+        "Distribute attributes",
+        "Specify basic relationships for entity types",
+        "Specify primary keys for entity types",
+        "Specify foreign keys",
+        "Specify composites and aggregates",
+        "Define generalizations",
+        "Specify the attributes for the primary entity type"
+    ],
+
+    "What are the kinds of Attributes in a Conceptual Model?": [
+        "Atomic Attribute - the value cannot be split without the loss in sense",
+        "Composite Attribute - the value could be decomposed into several sensible parts",
+        "Single-valued Attribute - only one value is allowed",
+        "Multi-valued Attribute - many different values are allowed",
+        "Stored Attribute - the values are stored in the DataBase",
+        "Derived Attribute - the values are not stored but computed as a function of the other attributes",
+        "Key Attribute - an attribute which is the part of the primary key for the Entity Type",
+        "Foreign Key Attribute - an attribute that belongs to a different Entity Type and is used as a part of the Primary Key",
+        "Candidate Key Attribute - an attribute that might be decided to be used as a part of the Primary Key",
+        "Identifying Attribute - an attribute from a corresponding Strong EntityType that is used as a part of the Primary Key"
+    ],
+
+    "What is a DataBase application program?": [
+        "It is the part of the Business Logic layer of the DMS architecture",
+        "It is a computer program that interacts with the database, via DBMS",
+        "It is a computer program that issues a query to the DBMS and receives the result back for further processing"
+    ],
+
+    "What is a model?": [
+        "A simplified and miniaturized copy of a real object",
+        "An informative representation of a set (class) of similar individuals (objects, processes, or associations) used to recognize (denote), classify (agree upon set membership), and communicate (inform) about these entities",
+        "A person who demonstrates haut couture clothes at the podium",
+        "A mathematical equation that helps predict the behaviour of a real-world phenomenon"
+    ],
+
+    "What is a pragmatic context?": [
+        "A pragmatic context is what is used by mere mortals for their practical purposes",
+        "A pragmatic context is the part of the Universe of Discourse within the focus of practical interest",
+        "A pragmatic context is a limited part of the Universe of Discourse that could be observed with sufficient detail for practice"
+    ],
+
+    "What is an abstract model?": [
+        "An abstraction of many real world entity instances that fall into a single concept by holding the similar set of definitional properties"
+    ],
+
+    "What are the valid DBMS features?": [
+        "is independent of subject domain",
+        "Is independent of the stored data",
+        "Is capable of coping with complex data structures",
+        "Contains an adequately hollistic and complete representation of a domain",
+        "Enables optimal data redundancy",
+        "Enables data integration",
+        "Provides for data safety and security with proper access rights",
+        "Provides the persistence of data",
+        "Ensures the independence of data from the applications",
+        "Provides for data processing efficacy"
+    ],
+
+    "What are the features of relationships used in Conceptual Modelling?": [
+        "Multiplicity - the number of instances taking part in the relationship",
+        "Membership - the modality of participation (optional or obligatory)",
+        "Participation - the modality of being a member in the relationship (optional or obligatory)",
+        "Cardinality - the number of participating parties (binary or n-ary)"
+    ],
+
+    "What is information?": [
+        "Information is the incoming sensory signal that is processed for a purpose",
+        "Information is a datum that is proven useful and triggers action after it is processed",
+        "Information is what is necessary to have for answering this question"
+    ],
+
+    "What is a DataBase?": [
+        "A DataBase is an organized and structured collection of data to be used by several stakeholders in their subject domain",
+        "A DataBase is a storage of data managed and manipulated using a DBMS"
+    ],
+    "Which types of relationships are used in Conceptual Modelling?": [
+        "One-to-One Relationship - a relationship that connects single Entities",
+        "One-to-Many relationship - a relationship that connects one Entity with several other Entities",
+        "Many-to-Many Relationship - a relationship that connects many Entities of one Entity Type to many Entities of the other Entity Type",
+        "Generalization Relationship - a relationship that connects several sub-concepts (Entity Types) to one super-concept (Entity Type). Sub-concepts inherit the properties of the super-concept",
+        "Part-Whole Relationship - a relationship that connects several Entity Types representing the parts of something to the Entity Type representing this something as a whole. Part-Whole Relationships could be Aggregations or Compositions"
+    ],
+
+    "What are the special relational operations supported by Relational Algebra?": [
+        "Renaming of relations",
+        "Selection of relations",
+        "Projection of relations",
+        "Join of relations",
+        "Division of relations"
+    ],
+
+    "What are the set-theoretical operations supported by Relational Algebra?": [
+        "Union of relations",
+        "Intersection of relations",
+        "Difference of relations",
+        "Cartesian product of relations"
+    ],
+
+    "What are the structural aspects covered by the Relational Model of Data?": [
+        "Represents data as two-dimensional tables, called Relations",
+        "The columns in Relations are called Attributes",
+        "Attributes take their values from Domains - the sets of admissible values",
+        "The rows in the table are called tuples - contain the values of corresponding Attributes in the intersection of the row with the corresponding columns",
+        "Primary Keys are the subsets of attributes that are used to identify tuples by the unique combinations of values"
+    ],
+
+    "How would you implement RA Rename operation in SQL?": [
+        "Using SQL ALTER TABLE statement",
+        "Using aliases via SQL SELECT ... AS ... statement"
+    ],
+
+    "What is SQL?": [
+        "Structured Query Language",
+        "A query language used in a Relational DBMS",
+        "A query language designed for managing data schemas and data in a Relational DBMS"
+    ],
+
+    "How would you implement RA Selection operation in SQL?": [
+        "Using SQL SELECT statement"
+    ],
+
+    "What is the difference between Natural Join and Theta Join?": [
+        "Natural Join returns the set of all combinations of tuples that are equal on their shared attributes. Theta Join does so, but for the cases when theta function holds true for the shared attributes",
+        "Theta Join does not require that the shared attributes are named the same, while Natural Join requires that"
+    ],
+
+    "What is a Data Model?": [
+        "A formal theory to be used in modelling data at the logical level of abstraction"
+    ],
+
+    "How would you implement RA Division operation in SQL?": [
+        "There is no DIVISION operation in SQL",
+        "Using nested SQL SELECT statements"
+    ],
+
+    "Which operations are supported by the Relational Model of Data?": [
+        "Declarative operations",
+        "Set-theoretical operations",
+        "Relational operations",
+        "Cartesian product",
+        "Difference",
+        "Unary and Binary",
+        "Projection",
+        "Selection",
+        "Natural Join",
+        "Theta Join"
+    ],
+
+    "How would you implement RA Projection operation in SQL?": [
+        "Using SQL SELECT or SELECT DISTINCT statement"
+    ],
+
+    "How would you implement RA Join operation in SQL?": [
+        "Using SQL JOIN clause"
+    ],
+
+    "Are these all Logical Data Models?": [
+        "Relational Model",
+        "Network Model",
+        "Hierarchical Model",
+        "Graph-oriented Model",
+        "Key-Value Model",
+        "Column-based Model",
+        "Document-oriented Model",
+        "Semi-structured Model",
+        "Triple-based Model",
+        "XML-based Model"
+    ],
+
+    "What is a Data Schema?": [
+        "The result of using the Data model in the process of modelling data in the domain of interest",
+        "The output of Logical Data Modelling Workflow"
+    ],
+
+    "What are the valid components of the Relational Algebra?": [
+        "The set of all possible relations",
+        "The set of set-theoretical operations over relations",
+        "The set of special relational operations over relations"
+    ],
+
+    "Which generic Integrity Constraints are supported by the Relational Model of Data?": [
+        "Entity integrity constraint",
+        "Referential integrity constraint"
+    ],
+
+    "What are the sub-languages of SQL?": [
+        "Data Definition Language",
+        "Data Query Language",
+        "Data Manipulation Language",
+        "Data Control Language"
+    ],
+
+    "What information needs to be collected for Requirements Elicitation?": [
+        "For a Unit - what data / documents are received from the other Units",
+        "For a Unit - what data / documents belong to the Unit",
+        "For a Unit - what what data / documents are produced by the Unit",
+        "For a Task - the projections of the Unit data / documents",
+        "For a Stakeholder - the projections of the Unit data / documents",
+        "For an Actor / Role - access rights wrt the portions of data / documents",
+        "All projections - the volume and update velocity of data"
+    ],
+
+    "Which kinds of objectives are valid for a DBS design workflow?": [
+        "Mission objectives",
+        "Design objectives"
+    ],
+
+    "What are the phases in the DBS Design Workflow?": [
+        "Mission and Objectives",
+        "Requirements Elicitation",
+        "Design",
+        "Implementation",
+        "Testing"
+    ],
+
+    "Which DBS design objectives have to be met?": [
+        "Ensure that both required and ad hoc information retrieval are supported",
+        "Ensure that the tables are constructed properly and efficiently",
+        "Ensure that data integrity is imposed at the field, table, and relationship levels",
+        "Ensure that the business rules relevant to the organization are supported",
+        "Ensure that the result lends itself to future refinement and growth of the organization / business"
+    ],
+
+    "What are the steps in a requirements elicitation pipeline?": [
+        "Collect relevant facts and documents",
+        "Analyse collected information",
+        "Document the results of analysis",
+        "Validate the requirements specification"
+    ],
+
+    "What questions does a DBS Mission Statement answer?": [
+        "Why is the DBS required?",
+        "Which part of business or domain is covered?",
+        "What stakeholders (user groups) are involved?",
+        "Is it the development of a fully new or refinement of an existing DBS?",
+        "How will efficiency and effectiveness be measured?"
+    ],
+
+    "What are the phases of DBS lifecycle?": [
+        "Planning",
+        "Mission and Objectives",
+        "Requirements Elicitation",
+        "Design",
+        "Implementattion",
+        "Testing and Deployment",
+        "Operation and Maintenance",
+        "Exploitation"
+    ],
+
+    "How would a Multi-Valued Dependency be denoted?": [
+        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆R\\X. Then r(R) satisfies the multi-valued dependency X-≫Y if: ∀t1, t2∈ r: t1(X)=t2(X) ∃t3∈r: t3(X)=t1(X)=t2(X) ∧ t3(Y)=t1(Y) ∧ t3(Z)=t2(Z)",
+        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆R\\X. Then r(R) satisfies the multi-valued dependency X-≫Y if for every combination of the values on X there exist more than one value combination on Y",
+        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆R\\X. Then r(R) satisfies the multi-valued dependency X-≫Y if Y and Z have independent sets of values wrt the values of X"
+    ],
+
+    "What is valid for denoting the 1st Normal Form?": [
+        "Let: r(R) be a relation with schema R. Schema R is in 1NF if ∀A_i∈R all the values in D_i=dom(A_i) are atomic"
+    ],
+
+    "How would Join Dependency be denoted?": [
+        "Let r(R) be a relation with schema R, R be the union of Ri⊆R, i=1...n. Then relation r(R) satisfies the join dependency (JD) ∗[R1,…,Rn] if r could be losslessly decomposed onto R1,…,Rn, i.e. r(R)=ΠR1(r(R)) ⋈…⋈ ΠRn(r(R))",
+        "Join Dependency is the dependency satisfied by a relation r with schema R if r could be losslessly decomposed onto a number of its distinct projections"
+    ],
+
+    "Which data integrity aspects have to be considered in Logical RDB design?": [
+        "Entity or relation integrity",
+        "Referential integrity",
+        "Domain values integrity",
+        "User defined integrity (business logic)"
+    ],
+
+    "What is valid for denoting functional dependency?": [
+        "Let the schema R of a relation r contain 2 subsets of attributes - A and B. If two tuples of r agree on all of the attributes in A, then they must also agree on all of the attributes in B"
+    ],
+
+    "How would the 2nd Normal Form be denoted?": [
+        "Let r(R) be a relation with schema R",
+        "Let S be the set of FDs for the schema R of r, Schema R is in 2NF wrt the set of FDs S if R is in 1NF",
+        "Schema R is in 2NF wrt the set of FDs S if every non-prime attribute in R is fully dependent on every prime attribute in R (there are no partial dependencies)"
+    ],
+
+    "How would Loseless Decomposition be denoted?": [
+        "Let r(R) be a relation with schema R, X,Y,Z be pair-wise disjoint sets: X,Y,Z⊂R, r1(XY)=ΠXY(r(R)), r2(XZ)=ΠXZ(r(R))",
+        "Then r(R) could be loselessly decomposed into r1(XY) and r2(XZ) if r(R)=r1(XY) ⋈ r2(XZ), where ⋈ is the natural join operation"
+    ],
+
+    "What are the foci of the Analysis step within requirements elicitation?": [
+        "Within a Task - operations",
+        "Within a Task - compositions of operations in workflows",
+        "Within a Task - data / documents in operations",
+        "Within a Stakeholder view - data / document elements",
+        "Within a Stakeholder view - the origins of data / documents",
+        "Within a Stakeholder view - the operations related to data / documents",
+        "Within a Stakeholder view - data volume and change velocity estimations"
+    ],
+
+    "What are the aspects to be covered by DBS scoping?": [
+        "DBS boundary within the organization or business",
+        "Organizational Units within the DBS boundary",
+        "Organizational Units cooperating with the units within the DBS boundary",
+        "Tasks to be performed using the DBS",
+        "The stakeholders that perform the tasks within the DBS Boundary"
+    ],
+
+    "What needs to be covered by the conclusions of the Analysis in Requirements Elicitation?": [
+        "Conformance to mission objectives",
+        "Conformance to the relevant design objectives",
+        "Correctness and completeness of the list of stakeholders",
+        "Correctness and completeness of the list of operations",
+        "Correctness and completeness of the list of data objects",
+        "Correctness and completeness of the data properties specification",
+        "Adequacy of data volume and update velocity estimations",
+        "Adequacy of the estimations of future extensions and changes"
+    ],
+
+    "How would 4NF be denoted?": [
+        "Let r(R) be a relation with schema R, X,Y⊆R, X∩Y=∅, Z⊆R\\X. Relation r(R) is in 4NF wrt the set S of FD-s and MVD-s if: (i) r(R) is in 1NF; and (ii) All non-trivial MVD-s from S, satisfied by r(R), are FD-s on candidate keys in R"
+    ],
+
+    "How would the 3d Normal Form be denoted?": [
+        "Schema R of r(R) is in 3NF wrt the set of FDs S if: (i) R is in 2NF; and (ii) there are no non-prime attributes in R that are transitively dependent on the primary key in R (no transitive dependencies)"
+    ],
+
+    "How would Prime Attribute be denoted?": [
+        "An attribute A∈R is a prime attribute in schema R, wrt to the set of FDs valid for R, if A belongs to a primary key K: A∈K⊂R"
+    ],
+
+    "What are the valid statements regarding the Boyce-Codd Normal Form?": [
+        "BCNF is the result of schema synthesis",
+        "BCNF is stronger than 2NF and 3NF as it extends their definitions to all candidate keys",
+        "BCNF removes partial and transitive dependencies, similarly to 2NF and 3NF",
+        "Schema R of r(R) is in BCNF wrt the set of FD-s S if: (i) R is in 1NF; and (ii) no attribute in R is transitively dependent on any candidate key in R",
+        "BCNF could be achieved through schema decomposition"
+    ],
+
+    "How would you denote a transitive dependency informally?": [
+        "Let r(R) be a relation with schema R. Attribute C from R transitively depends on the attribute A from R through the attribute B from R if B functionally depends on A and C functionally depends on B"
+    ],
+
+    "How would the 5th Normal Form be denoted?": [
+        "Let r(R) be a relation with schema R. Then r(R) is in PJNF iff all the JD-s it satisfies are FD-s on candidate keys",
+        "Let r(R) be a relation with schema R. Then r(R) is in 5NF if r(R) is in 3NF and all candidate keys have only one attribute"
+    ],
+    "What is data redundancy in a DBS?": [
+        "The unnecessary repetition of the same data values in one or more records or fields, within a table, or in two or more tables"
+    ],
+    "What are the properties that are valid for Multi-Valued Dependencies?": [
+        "If r(R) satisfies FD X→Y then it satisfies MVD X-≫Y",
+        "If r(R) satisfies a non-trivial MVD X-≫Y then it could be loselessly decomposed into r1(XY) and r2(XZ)",
+        "MVDs are transitive if X∩Z=∅, i.e. (X-≫Y)∧(Y-≫Z) → (X-≫Z)"
+    ],
+    "What is valid for denoting Partial Dependency?": [
+        "Let r(R) be a relation with schema R; X,Y⊂R",
+        "Let X→Y be an FD valid for schema R of r(R), If there exists X'⊂X: X′→Y is also an FD valid for schema R of r(R) then Y is partially dependent on X, otherwise Y is fully dependent on X"
+    ],
+
+    "How would the Graph Data Model be characterized?": [
+        "The Graph Data Model considers links between data objects as first-class citizens",
+        "The Graph Data Model enables graph traversals as queries",
+        "The Graph Data Model is a good match for solving problems in network analysis, knowledge representation and reasoning, social network applications",
+        "The Graph Data Model represents data as viewed conceptually, using nodes as Entities and edges as relationships"
+    ],
+    "What operations are provided by Key-Value APIs?": [
+        "PUT operation for adding key-value pairs or updating values",
+        "GET operation for receiving the data aggregate value corresponding to a single key value",
+        "DELETE operation for removing an individual key-value pair"
+    ],
+    "How would the Key-Value Data Model be characterized?": [
+        "Key-Value Model provides an index structure over data aggregates",
+        "Key-Value Model enables data manipulation at scale",
+        "Key-Value Model is good for distributing data on clusters, in a cloud",
+        "Key-Value Model copes with diversity and multi-modality of data",
+        "Key-Value Model is also known as an associative array model",
+        "Key-Value Model is also known as a hash model",
+        "Key-Value Model is also known as a dictionary model"
+    ],
+    "What is a document in a Document-Oriented Data Model?": [
+        "A document is anything having internal structure and regarded as a white box",
+        "Very often, a document is a JSON object",
+        "A document is a data aggregate with its internal structure made accessible for the API",
+        "A document within the Document Data Model could be queried using the property values from its internal structure"
+    ],
+    "How do NoSQL Data Models support transactions?": [
+        "NoSQL data models do not fully support ACID policies for transactions",
+        "NoSQL data models support atomicity and isolation in transactions only for individual data aggregates",
+        "NoSQL data models support BASE policies in transactions",
+        "NoSQL data models do not support atomicity in transactions involving several data aggregates"
+    ],
+
+    "Which of the listed NoSQL Data Models use Data Aggregates?": [
+        "Key - Value data model",
+        "Column-based data model",
+        "Document-oriented data model"
+    ],
+    "What is Data Aggregate?": [
+        "A data unit that has a more complex structure than a set of tuples",
+        "A record-type data structure that allows whatever to be nested in it: e.g. lists, other record structures, multimedia, etc.",
+        "A collection of related data objects treated as a unit. Data manipulation and consistency (integrity) management methods apply to the unit as an atomic data object. Manipulation operations on a data aggregate, such as updates, are performed as atomic."
+    ],
+    "What is a Data Dashboard?": [
+        "A Data Dashboard is an interactive data analysis tool using several controls and data displays",
+        "A Data Dashboard is an interactive data analysis tool that helps extract actionable insights",
+        "A Data Dashboard is an interactive data analysis tool that is used to track and monitor the changes in data"
+    ],
+    "What is a Pivot Table?": [
+        "A pivot table is a 2-dimensional aggregate representation of n-dimensional data where excessive dimensions are fixed for a view - as pivots",
+        "A pivot table is a 2D projection of the Data Cube"
+    ],
+
+    "What are the kinds of data attributes in a Fact Table?": [
+        "Measure attributes",
+        "Dimension attributes"
+    ],
+    "How would Data Analytics be denoted?": [
+        "Processing of data to infer patterns, correlations, and models",
+        "Providing results that drive decisions",
+        "Informing business decisions based on the patterns in data and related prognoses"
+    ],
+    "What data schemas are used in a Data Warehouse to store multidimensional data?": [
+        "Star schema",
+        "Snowflake schema"
+    ],
+    "What is a roll-up operation?": [
+        "Roll-up operation is the aggregation of finer-grained to coarser-grained data"
+    ],
+    "How would a Data Lake be denoted?": [
+        "A Data Lake is a repository where structured and unstructured data can be stored using multiple data models and in multiple formats",
+        "A Data Lake does not require up-front effort to preprocess data"
+    ],
+    "What are the advantages of the use of URI in property identification?": [
+        "The Use of URI enables a reliable global identification scheme",
+        "The Use of URI resolves the cases of the use of homographs in naming",
+        "The Use of URI enables proper identification in multi-lingual settings",
+        "The Use of URI allows regarding properties as resources",
+        "The Use of URI allows specifying properties of properties"
+    ],
+    "What is Semantics?": [
+        "The semantics of a datum, document, resource is the relationship between a symbol or statement and its meaning",
+        "Semantics is the sense of a statement, object, or phenomenon revealed via the relevant properties",
+        "Entities have different semantics if the properties of these entities differ"
+    ],
+    "Which of the following are valid examples of a URI?": [
+        "https://www.google.com/search?q=uri",
+        "https://en.wikipedia.org/wiki/Ukraine#History",
+        "./v2.2/RDFS-OWL/psi-meta#Dependency",
+        "isbn:978-1-4200-9050-5",
+        "XMLSchema#string",
+        "empty string"
+    ],
+    "What is a URI?": [
+        "A URI is a Universal Resource Identifier",
+        "A URI is either a URL, or URN, or contains both as its parts"
+    ],
+    "What is a Resource in RDF?": [
+        "RDF resource is anything that has URI",
+        "RDF resource is anything that has URL or URN"
+    ],
+
+    "What is an RDF property?": [
+        "RDF property is a specific kind of an RDF resource that is used to specify the relationships between RDF Resources"
+    ],
+    "How would the Column (Family) Data Model be characterized?": [
+        "The Column Family Model is the mapping of a big 2+ dimensional table into one column",
+        "A column storage is similar to a Key-Value storage. The difference is in the key structure",
+        "A key in a Column Family Model contains: (i) table row number; (ii) table column identifier; (iii) column family identifier; (iv) time stamp of the value",
+        "A Column Family Store is good for time-series data",
+        "The key values in a column database are lexicographically ordered",
+        "Column families in a columnar database are the basic units for specifying access control and rights for different user groups"
+    ],
+    "What are the components within the Graph Data Model?": [
+        "Nodes of a graph are used to represent data objects (values)",
+        "Edges of a graph are used to represent the links between data objects (values)",
+        "Properties of data values or links are used to search matching fragments of the graph",
+        "Edges are used to traverse the corresponding nodes",
+        "Nodes and edges may have temporal bounds of their validity"
+    ],
+
+    "How would the Document-Oriented Data Model be characterized?": [
+        "The Document-Oriented model resembles Key-Value model",
+        "Keys in the Document-Oriented model are invisible IDs",
+        "Values in the Document-Oriented model are white boxes having their internal structure and properties",
+        "Values in the Document-Oriented model are indexed and are searchable by their properties",
+        "A Document Store is organized as a tree-like structure. The nodes represent document collections, sub-collections, and individual documents",
+        "Every document could be reached using the related search path from the root node of the document store"
+    ],
+    "What are the highlights of the Key-Value Data Model?": [
+        "Key-Value model uses a simple format for records",
+        "PUT and GET operations are fast and scale well in the Key-Value model",
+        "A value could be anything in the Key-Value model, including JSON code, embedded multimedia objects, and links",
+        "The values in the Key-Value model are data aggregates that may have different structures"
+    ],
+    "How would a document collection within the Document-Oriented Data Model be characterized?": [
+        "A document collection is like a file directory structure in a file system",
+        "A document collection could be regarded as a folder for nested sub-collections and individual documents",
+        "A document collection serves to navigate document hierarchies",
+        "A document collection serves to logically group similar documents",
+        "A document collection serves to logically group similar sub-collections",
+        "A document collection serves to store business rules such as permissions, indexes, and triggers",
+        "A document collection resembles a column family in the Columnar Data Model by being the basic unit for user access and rights control"
+    ],
+    "How heterogeneous the data collected in a Data Warehouse are?": [
+        "Data having different schemas",
+        "Data stored using different data models",
+        "Data having different granularity",
+        "Data corresponding to different measuring units",
+        "Data that are aggregated in different ways"
+    ],
+
+    "How would a Data Warehouse be denoted?": [
+        "A Data Warehouse is a repository (or archive) of information gathered from multiple sources",
+        "A Data Warehouse is the archive of data stored under a unified schema, at a single site",
+        "A Data Warehouse is a storage of persistent, including historical, data",
+        "A Data Warehouse is a system that provides the user a single consolidated interface to data",
+        "A Data Warehouse is a system that enables data analytics, decision-support queries, using OLAP, statistical analysis"
+    ],
+    "What are the ETL tasks?": [
+        "ETL stands for Extract, Transform, and Load",
+        "ETL tasks are the pipeline that implements data extraction, cleansing, transformation, aggregation, and storing it to a Data Warehouse"
+    ],
+    "What are the problems (complications) in collecting data into a Warehouse?": [
+        "Schema unification for the data coming from different sources is complex or impossible",
+        "Data may contain errors that have to be detected and resolved using business logic",
+        "Data from different sources might be contradictory in some values",
+        "It is not always evident that the data are duplicated in parts due to the use of different attribute names, measuring units, etc."
+    ],
+    "What are multidimensional data?": [
+        "Multidimensional data are data that can be modelled using dimension attributes and measure attributes",
+        "Multidimensional data are data that could be represented by a data cube"
+    ],
+
+    "What is the Semantic Web? How does it differ from the conventional Web?": [
+        "The Semantic Web is the infrastructure that enables representing and using the semantics of Web Resources",
+        "The Semantic Web is the hypernet of entities like people, books, vehicles, or any other kind",
+        "The Semantic Web is a hypergraph constructed of triples and built on top of the Web",
+        "The Semantic Web extends the Web by representing the entities that are not represented by the Web - like paper books",
+        "The Semantic Web is a media that enables communication between machines",
+        "The Semantic Web is the infrastructure in which every resource has formally defined meaning",
+        "The Semantic Web is the next generation of the structured Web"
+    ],
+    "What is the difference between object and datatype properties in RDF?": [
+        "An object property is the property that connects a resource and a different resource, while a datatype property connects a resource and a value of a particular type",
+        "An object property is a semantic relationship between a resource and a resource. A datatype property is the assignment of a value to the property of a resource"
+    ],
+    "What are the right ways to specify properties in RDF?": [
+        "A property could be specified by referring to the instance of a property class",
+        "A property could be specified by referring to a literal",
+        "A property could be specified by making a resource a sub-class of a class having the desired property"
+    ],
+    "How could an RDF document be represented in the frame of the RDF Model?": [
+        "As a set of triples",
+        "As a semantic network graph",
+        "As an XML-serialized document"
+    ]
+}
+  
