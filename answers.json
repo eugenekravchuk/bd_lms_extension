@@ -579,5 +579,6 @@
     "What is a semantic predicate?": [
         "A semantic predicate is a Boolean predicate like P(A_i,L_k,A_j ) that holds true if A_i is connexted to A_j by L_k",
         "A semantic predicate is a model instrument used to represent statements in the RDF Data Model"
-    ]
+    ], 
+    "Hui": []
 }
