@@ -290,7 +290,7 @@
 
     "How would the 2nd Normal Form be denoted?": [
         "Let r(R) be a relation with schema R",
-        "Let S be the set of FDs for the schema R of r, Schema R is in 2NF wrt the set of FDs S if R is in 1NF",
+        "Let S be the set of FDs for the schema R of r",
         "Schema R is in 2NF wrt the set of FDs S if every non-prime attribute in R is fully dependent on every prime attribute in R (there are no partial dependencies)"
     ],
 
