@@ -3,26 +3,31 @@ let answerKey = {};
 fetch(chrome.runtime.getURL('answers.json'))
   .then(response => response.json())
   .then(data => {
-    answerKey = data;
+    answerKey = Object.fromEntries(
+      Object.entries(data).map(([question, answers]) => [
+        normalizeQuestion(question),
+        answers.map(a => normalizeWhitespace(a))
+      ])
+    );
     waitUntilRendered();
   });
 
 function normalizeWhitespace(text) {
   return text
-    .replace(/\u00A0/g, ' ') // NBSP
-    .replace(/\u202F/g, ' ') // Narrow NBSP
-    .replace(/\u200B/g, '')  // Zero-width space
-    .replace(/\s+/g, ' ')    // Зайві пробіли
+    .replace(/\u00A0/g, ' ')
+    .replace(/\u202F/g, ' ') 
+    .replace(/\u200B/g, '')
+    .replace(/\s+/g, ' ')
     .trim();
 }
 
 function normalizeQuestion(text) {
-    return normalizeWhitespace(
-      text
-        .replace(/[\s\u00A0\u202F\u200B]*[-–—]?\s*please.*$/i, '')
-        .replace(/\s*\([\s\S]*?\)$/i, '')
-    );
-  }
+  return normalizeWhitespace(
+    text
+      .replace(/[\s\u00A0\u202F\u200B]*[-–—]?\s*please.*$/i, '')
+      .replace(/\s*\([\s\S]*?\)$/i, '')
+  );
+}
 
 function autoAnswer() { 
   const questions = document.querySelectorAll('div.que');
