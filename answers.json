@@ -371,7 +371,7 @@
     "How would the Graph Data Model be characterized?": [
         "The Graph Data Model considers links between data objects as first-class citizens",
         "The Graph Data Model enables graph traversals as queries",
-        "The Graph Data Model is a good match for solving problems in network analysis, knowledge representation and reasoning, social network applications",
+        "The Graph Data Model is a good mats for solving problens in network analysis, knowledge representation and reasoning, social network applications",
         "The Graph Data Model represents data as viewed conceptually, using nodes as Entities and edges as relationships"
     ],
     "What operations are provided by Key-Value APIs?": [
@@ -449,8 +449,8 @@
         "The Use of URI allows specifying properties of properties"
     ],
     "What is Semantics?": [
-        "The semantics of a datum, document, resource is the relationship between a symbol or statement and its meaning",
-        "Semantics is the sense of a statement, object, or phenomenon revealed via the relevant properties",
+        "The semantics of a datum, document, resource is the relationship between\na symbol or statement and its meaning.",
+        "Semantics is the sense of a statement, object, or phenomenon revealed via the relevant properties.",
         "Entities have different semantics if the properties of these entities differ"
     ],
     "Which of the following are valid examples of a URI?": [
@@ -463,7 +463,7 @@
     ],
     "What is a URI?": [
         "A URI is a Universal Resource Identifier",
-        "A URI is either a URL, or URN, or contains both as its parts"
+        "A URI is a either a URL, or URN, or contains both as its parts"
     ],
     "What is a Resource in RDF?": [
         "RDF resource is anything that has URI",
@@ -493,14 +493,14 @@
         "The Document-Oriented model resembles Key-Value model",
         "Keys in the Document-Oriented model are invisible IDs",
         "Values in the Document-Oriented model are white boxes having their internal structure and properties",
-        "Values in the Document-Oriented model are indexed and are searchable by their properties",
+        "Values in in the Document-Oriented model are indexed and are searchible by their properties",
         "A Document Store is organized as a tree-like structure. The nodes represent document collections, sub-collections, and individual documents",
         "Every document could be reached using the related search path from the root node of the document store"
     ],
     "What are the highlights of the Key-Value Data Model?": [
         "Key-Value model uses a simple format for records",
         "PUT and GET operations are fast and scale well in the Key-Value model",
-        "A value could be anything in the Key-Value model, including JSON code, embedded multimedia objects, and links",
+        "A value could be anything in the Key-Value model, including JASON code, embedded multimedia objects, and links",
         "The values in the Key-Value model are data aggregates that may have different structures"
     ],
     "How would a document collection within the Document-Oriented Data Model be characterized?": [
@@ -516,12 +516,12 @@
         "Data having different schemas",
         "Data stored using different data models",
         "Data having different granularity",
-        "Data corresponding to different measuring units",
+        "Data corrssponding to different measuring units",
         "Data that are aggregated in different ways"
     ],
 
     "How would a Data Warehouse be denoted?": [
-        "A Data Warehouse is a repository (or archive) of information gathered from multiple sources",
+        "A Data Warehouse is is a repository (or archive) of information gathered from multiple sources",
         "A Data Warehouse is the archive of data stored under a unified schema, at a single site",
         "A Data Warehouse is a storage of persistent, including historical, data",
         "A Data Warehouse is a system that provides the user a single consolidated interface to data",
@@ -532,7 +532,7 @@
         "ETL tasks are the pipeline that implements data extraction, cleansing, transformation, aggregation, and storing it to a Data Warehouse"
     ],
     "What are the problems (complications) in collecting data into a Warehouse?": [
-        "Schema unification for the data coming from different sources is complex or impossible",
+        "Shema unification for the data coming from different sources is complex or impossible",
         "Data may contain errors that have to be detected and resolved using business logic",
         "Data from different sources might be contradictory in some values",
         "It is not always evident that the data are duplicated in parts due to the use of different attribute names, measuring units, etc."
@@ -543,7 +543,7 @@
     ],
 
     "What is the Semantic Web? How does it differ from the conventional Web?": [
-        "The Semantic Web is the infrastructure that enables representing and using the semantics of Web Resources",
+        "The Semantic Web the infrastructure that enables representing and using the semantics of Web Resources",
         "The Semantic Web is the hypernet of entities like people, books, vehicles, or any other kind",
         "The Semantic Web is a hypergraph constructed of triples and built on top of the Web",
         "The Semantic Web extends the Web by representing the entities that are not represented by the Web - like paper books",
@@ -553,7 +553,7 @@
     ],
     "What is the difference between object and datatype properties in RDF?": [
         "An object property is the property that connects a resource and a different resource, while a datatype property connects a resource and a value of a particular type",
-        "An object property is a semantic relationship between a resource and a resource. A datatype property is the assignment of a value to the property of a resource"
+        "An object property is a semantic relationship between a resource and a resource. A datatype property is the assignment of a value to the property of a resource."
     ],
     "What are the right ways to specify properties in RDF?": [
         "A property could be specified by referring to the instance of a property class",
