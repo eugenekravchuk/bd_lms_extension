@@ -3,28 +3,35 @@ let answerKey = {};
 fetch(chrome.runtime.getURL('answers.json'))
   .then(response => response.json())
   .then(data => {
-    answerKey = data;
+    answerKey = Object.fromEntries(
+      Object.entries(data).map(([question, answers]) => [
+        normalizeQuestion(question),
+        answers.map(a => normalizeWhitespace(a))
+      ])
+    );
     waitUntilRendered();
   });
 
 function normalizeWhitespace(text) {
   return text
-    .replace(/\u00A0/g, ' ') // NBSP
-    .replace(/\u202F/g, ' ') // Narrow NBSP
-    .replace(/\u200B/g, '')  // Zero-width space
-    .replace(/\s+/g, ' ')    // Зайві пробіли
-    .trim();
+    .replace(/\u00A0/g, ' ')  // Non-breaking space
+    .replace(/\u202F/g, ' ')  // Narrow NBSP
+    .replace(/\u200B/g, '')   // Zero-width space
+    .replace(/\uFEFF/g, '')   // BOM
+    .replace(/\s+/g, ' ')     // Extra spaces
+    .trim()
+    .replace(/[.,;:\s]+$/, ''); // Strip trailing punctuation and space
 }
 
 function normalizeQuestion(text) {
   return normalizeWhitespace(
     text
-      .replace(/[\s\u00A0\u202F\u200B]*[-–—]?\s*please.*$/i, '')
-      .replace(/\s*\([\s\S]*?\)$/i, '')
+      .replace(/[\s\u00A0\u202F\u200B]*[-–—]?\s*please.*$/i, '') // Strip "please..." with any dash or space variant
+      .replace(/\s*\([\s\S]*?\)$/i, '') // Remove trailing bracketed notes
   );
 }
 
-function autoAnswer() { 
+function autoAnswer() {
   const questions = document.querySelectorAll('div.que');
   if (!questions.length) return false;
 
@@ -44,7 +51,7 @@ function autoAnswer() {
       let labelText = label.innerText || '';
       labelText = normalizeWhitespace(labelText.replace(/^[a-z]\.\s*/i, ''));
 
-      if (correctAnswers.some(ans => normalizeWhitespace(ans) === labelText)) {
+      if (correctAnswers.includes(labelText)) {
         input.checked = true;
         input.dispatchEvent(new Event('change', { bubbles: true }));
       }
