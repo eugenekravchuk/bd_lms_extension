@@ -245,8 +245,8 @@
 
     "What questions does a DBS Mission Statement answer?": [
         "Why is the DBS required?",
-        "Which part of business or domain is covered?",
-        "What stakeholders (user groups) are involved?",
+        "Which part of business or domain  is covered?",
+        "What stakeholders (user groups) are involved?,",
         "Is it the development of a fully new or refinement of an existing DBS?",
         "How will efficiency and effectiveness be measured?"
     ],
@@ -366,7 +366,7 @@
     ],
     "What is valid for denoting Partial Dependency?": [
         "Let r(R) be a relation with schema R; X,Y⊂R",
-        "Let X→Y be an FD valid for schema R of r(R), If there exists X'⊂X: X′→Y is also an FD valid for schema R of r(R) then Y is partially dependent on X, otherwise Y is fully dependent on X"
+        "Let X→Y be an FD valid for schema R of r(R), If there exists X'⊂X:X′→Y is also an FD valid for schema R of r(R) then Y is partially dependent on X, otherwise Y is fully dependent on X"
     ],
 
     "How would the Graph Data Model be characterized?": [
