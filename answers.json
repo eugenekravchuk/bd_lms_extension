@@ -198,7 +198,7 @@
         "Referential integrity constraint"
     ],
 
-    "What are the sub-languages of SQL? Please select as many variants as appropriate": [
+    "What are the sub-languages of SQL?": [
         "Data Definition Language",
         "Data Query Language",
         "Data Manipulation Language",
@@ -372,7 +372,7 @@
     "How would the Graph Data Model be characterized?": [
         "The Graph Data Model considers links between data objects as first-class citizens",
         "The Graph Data Model enables graph traversals as queries",
-        "The Graph Data Model is a good match for solving problems in network analysis, knowledge representation and reasoning, social network applications",
+        "The Graph Data Model is a good mats for solving problens in network analysis, knowledge representation and reasoning, social network applications",
         "The Graph Data Model represents data as viewed conceptually, using nodes as Entities and edges as relationships"
     ],
     "What operations are provided by Key-Value APIs?": [
@@ -391,7 +391,7 @@
     ],
     "What is a document in a Document-Oriented Data Model?": [
         "A document is anything having internal structure and regarded as a white box",
-        "Very often, a document is a JSON object",
+        "Very often, a document is a JASON object",
         "A document is a data aggregate with its internal structure made accessible for the API",
         "A document within the Document Data Model could be queried using the property values from its internal structure"
     ],
@@ -418,7 +418,7 @@
         "A Data Dashboard is an interactive data analysis tool that is used to track and monitor the changes in data"
     ],
     "What is a Pivot Table?": [
-        "A pivot table is a 2-dimensional aggregate representation of n-dimensional data where excessive dimensions are fixed for a view - as pivots",
+        "A pivot table is is a 2-dimensional aggregate representation of n-dimensional data where excessive dimensions are fixed for a view - as pivots",
         "A pivot table is a 2D projection of the Data Cube"
     ],
 
@@ -450,8 +450,8 @@
         "The Use of URI allows specifying properties of properties"
     ],
     "What is Semantics?": [
-        "The semantics of a datum, document, resource is the relationship between a symbol or statement and its meaning",
-        "Semantics is the sense of a statement, object, or phenomenon revealed via the relevant properties",
+        "The semantics of a datum, document, resource is the relationship between\na symbol or statement and its meaning.",
+        "Semantics is the sense of a statement, object, or phenomenon revealed via the relevant properties.",
         "Entities have different semantics if the properties of these entities differ"
     ],
     "Which of the following are valid examples of a URI?": [
@@ -464,7 +464,7 @@
     ],
     "What is a URI?": [
         "A URI is a Universal Resource Identifier",
-        "A URI is either a URL, or URN, or contains both as its parts"
+        "A URI is a either a URL, or URN, or contains both as its parts"
     ],
     "What is a Resource in RDF?": [
         "RDF resource is anything that has URI",
@@ -501,7 +501,7 @@
     "What are the highlights of the Key-Value Data Model?": [
         "Key-Value model uses a simple format for records",
         "PUT and GET operations are fast and scale well in the Key-Value model",
-        "A value could be anything in the Key-Value model, including JSON code, embedded multimedia objects, and links",
+        "A value could be anything in the Key-Value model, including JASON code, embedded multimedia objects, and links",
         "The values in the Key-Value model are data aggregates that may have different structures"
     ],
     "How would a document collection within the Document-Oriented Data Model be characterized?": [
@@ -510,19 +510,19 @@
         "A document collection serves to navigate document hierarchies",
         "A document collection serves to logically group similar documents",
         "A document collection serves to logically group similar sub-collections",
-        "A document collection serves to store business rules such as permissions, indexes, and triggers",
+        "A document collection serves to store business rules such as permissions,\nindexes, and triggers",
         "A document collection resembles a column family in the Columnar Data Model by being the basic unit for user access and rights control"
     ],
     "How heterogeneous the data collected in a Data Warehouse are?": [
         "Data having different schemas",
         "Data stored using different data models",
         "Data having different granularity",
-        "Data corresponding to different measuring units",
+        "Data corrssponding to different measuring units",
         "Data that are aggregated in different ways"
     ],
 
     "How would a Data Warehouse be denoted?": [
-        "A Data Warehouse is a repository (or archive) of information gathered from multiple sources",
+        "A Data Warehouse is is a repository (or archive) of information gathered from multiple sources",
         "A Data Warehouse is the archive of data stored under a unified schema, at a single site",
         "A Data Warehouse is a storage of persistent, including historical, data",
         "A Data Warehouse is a system that provides the user a single consolidated interface to data",
@@ -533,7 +533,7 @@
         "ETL tasks are the pipeline that implements data extraction, cleansing, transformation, aggregation, and storing it to a Data Warehouse"
     ],
     "What are the problems (complications) in collecting data into a Warehouse?": [
-        "Schema unification for the data coming from different sources is complex or impossible",
+        "Shema unification for the data coming from different sources is complex or impossible",
         "Data may contain errors that have to be detected and resolved using business logic",
         "Data from different sources might be contradictory in some values",
         "It is not always evident that the data are duplicated in parts due to the use of different attribute names, measuring units, etc."
@@ -544,17 +544,18 @@
     ],
 
     "What is the Semantic Web? How does it differ from the conventional Web?": [
-        "The Semantic Web is the infrastructure that enables representing and using the semantics of Web Resources",
-        "The Semantic Web is the hypernet of entities like people, books, vehicles, or any other kind",
-        "The Semantic Web is a hypergraph constructed of triples and built on top of the Web",
-        "The Semantic Web extends the Web by representing the entities that are not represented by the Web - like paper books",
-        "The Semantic Web is a media that enables communication between machines",
-        "The Semantic Web is the infrastructure in which every resource has formally defined meaning",
-        "The Semantic Web is the next generation of the structured Web"
+    "The Semantic Web the infrastructure that enables representing and using the semantics of Web Resources",
+    "The Semantic Web is the hypernet of entities like people, books, vehicles, or any other kind.",
+    "The Semantic Web is a hypergraph constructed of triples and built on top of the Web",
+    "The Semantic Web extends the Web by representing the entities that are are not represented by the Web - like paper books.",
+    "The Semantic Web is a media that enables communication between machines",
+    "The Semantic Web is the infrastructure in which every resource has formally defined meaning",
+    "The Semantic Web is the next generation of the structured Web"
     ],
+
     "What is the difference between object and datatype properties in RDF?": [
         "An object property is the property that connects a resource and a different resource, while a datatype property connects a resource and a value of a particular type",
-        "An object property is a semantic relationship between a resource and a resource. A datatype property is the assignment of a value to the property of a resource"
+        "An object property is a semantic relationship between a resource and a resource. A datatype property is the assignment of a value to the property of a resource."
     ],
     "What are the right ways to specify properties in RDF?": [
         "A property could be specified by referring to the instance of a property class",
@@ -571,5 +572,10 @@
         "A datum is an element of computer storage used as input for computation",
         "A datum is the part of a sensory input that could potentially be useful",
         "A datum is a note or message containing information"
+    ],
+
+    "What is a semantic predicate?": [
+        "A semantic predicate is a Boolean predicate like P(A_i,L_k,A_j ) that holds true if A_i is connexted to A_j by L_k",
+        "A semantic predicate is a model instrument used to represent statements in the RDF Data Model"
     ]
 }
