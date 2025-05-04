@@ -135,8 +135,8 @@
     ],
 
     "What is the difference between Natural Join and Theta Join?": [
-        "Natural Join returns the set of all combinations of tuples that are equal on their shared attributes. Theta Join does so, but for the cases when theta function holds true for the shared attributes",
-        "Theta Join does not require that the shared attributes are named the same, while Natural Join requires that"
+        "Natural Join returns the set of all combinations of tuples that are equal on their shared attributes. Theta Join does so, but for the cases when theta function holds true for the shared attributes.",
+        "Theta Join does not require that the shared attributes are named the same, while Natural Join requires that."
     ],
 
     "What is a Data Model?": [
@@ -198,7 +198,7 @@
         "Referential integrity constraint"
     ],
 
-    "What are the sub-languages of SQL? Please select as many variants as appropriate": [
+    "What are the sub-languages of SQL?": [
         "Data Definition Language",
         "Data Query Language",
         "Data Manipulation Language",
@@ -245,7 +245,7 @@
 
     "What questions does a DBS Mission Statement answer?": [
         "Why is the DBS required?",
-        "Which part of business or domain  is covered?",
+        "Which part of business or domain is covered?",
         "What stakeholders (user groups) are involved?",
         "Is it the development of a fully new or refinement of an existing DBS?",
         "How will efficiency and effectiveness be measured?"
@@ -291,6 +291,7 @@
     "How would the 2nd Normal Form be denoted?": [
         "Let r(R) be a relation with schema R",
         "Let S be the set of FDs for the schema R of r",
+        "Schema R is in 2NF wrt the set of FDs S if R is in 1NF",
         "Schema R is in 2NF wrt the set of FDs S if every non-prime attribute in R is fully dependent on every prime attribute in R (there are no partial dependencies)"
     ],
 
@@ -390,7 +391,7 @@
     ],
     "What is a document in a Document-Oriented Data Model?": [
         "A document is anything having internal structure and regarded as a white box",
-        "Very often, a document is a JSON object",
+        "Very often, a document is a JASON object",
         "A document is a data aggregate with its internal structure made accessible for the API",
         "A document within the Document Data Model could be queried using the property values from its internal structure"
     ],
@@ -417,7 +418,7 @@
         "A Data Dashboard is an interactive data analysis tool that is used to track and monitor the changes in data"
     ],
     "What is a Pivot Table?": [
-        "A pivot table is a 2-dimensional aggregate representation of n-dimensional data where excessive dimensions are fixed for a view - as pivots",
+        "A pivot table is is a 2-dimensional aggregate representation of n-dimensional data where excessive dimensions are fixed for a view - as pivots",
         "A pivot table is a 2D projection of the Data Cube"
     ],
 
@@ -441,7 +442,7 @@
         "A Data Lake is a repository where structured and unstructured data can be stored using multiple data models and in multiple formats",
         "A Data Lake does not require up-front effort to preprocess data"
     ],
-    "What are the advantages of the use of URI in property identification?": [
+    "What are the advantages of thee use of URI in property identification?": [
         "The Use of URI enables a reliable global identification scheme",
         "The Use of URI resolves the cases of the use of homographs in naming",
         "The Use of URI enables proper identification in multi-lingual settings",
@@ -492,7 +493,7 @@
     "How would the Document-Oriented Data Model be characterized?": [
         "The Document-Oriented model resembles Key-Value model",
         "Keys in the Document-Oriented model are invisible IDs",
-        "Values in the Document-Oriented model are white boxes having their internal structure and properties",
+        "Values in in the Document-Oriented model are white boxes having their internal structure and properties",
         "Values in in the Document-Oriented model are indexed and are searchible by their properties",
         "A Document Store is organized as a tree-like structure. The nodes represent document collections, sub-collections, and individual documents",
         "Every document could be reached using the related search path from the root node of the document store"
@@ -509,7 +510,7 @@
         "A document collection serves to navigate document hierarchies",
         "A document collection serves to logically group similar documents",
         "A document collection serves to logically group similar sub-collections",
-        "A document collection serves to store business rules such as permissions, indexes, and triggers",
+        "A document collection serves to store business rules such as permissions,\nindexes, and triggers",
         "A document collection resembles a column family in the Columnar Data Model by being the basic unit for user access and rights control"
     ],
     "How heterogeneous the data collected in a Data Warehouse are?": [
@@ -537,20 +538,21 @@
         "Data from different sources might be contradictory in some values",
         "It is not always evident that the data are duplicated in parts due to the use of different attribute names, measuring units, etc."
     ],
-    "What are multidimensional data?": [
+    "What are multidimentional data?": [
         "Multidimensional data are data that can be modelled using dimension attributes and measure attributes",
         "Multidimensional data are data that could be represented by a data cube"
     ],
 
     "What is the Semantic Web? How does it differ from the conventional Web?": [
-        "The Semantic Web the infrastructure that enables representing and using the semantics of Web Resources",
-        "The Semantic Web is the hypernet of entities like people, books, vehicles, or any other kind",
-        "The Semantic Web is a hypergraph constructed of triples and built on top of the Web",
-        "The Semantic Web extends the Web by representing the entities that are not represented by the Web - like paper books",
-        "The Semantic Web is a media that enables communication between machines",
-        "The Semantic Web is the infrastructure in which every resource has formally defined meaning",
-        "The Semantic Web is the next generation of the structured Web"
+    "The Semantic Web the infrastructure that enables representing and using the semantics of Web Resources",
+    "The Semantic Web is the hypernet of entities like people, books, vehicles, or any other kind.",
+    "The Semantic Web is a hypergraph constructed of triples and built on top of the Web",
+    "The Semantic Web extends the Web by representing the entities that are are not represented by the Web - like paper books.",
+    "The Semantic Web is a media that enables communication between machines",
+    "The Semantic Web is the infrastructure in which every resource has formally defined meaning",
+    "The Semantic Web is the next generation of the structured Web"
     ],
+
     "What is the difference between object and datatype properties in RDF?": [
         "An object property is the property that connects a resource and a different resource, while a datatype property connects a resource and a value of a particular type",
         "An object property is a semantic relationship between a resource and a resource. A datatype property is the assignment of a value to the property of a resource."
@@ -570,5 +572,10 @@
         "A datum is an element of computer storage used as input for computation",
         "A datum is the part of a sensory input that could potentially be useful",
         "A datum is a note or message containing information"
+    ],
+
+    "What is a semantic predicate?": [
+        "A semantic predicate is a Boolean predicate like P(A_i,L_k,A_j ) that holds true if A_i is connexted to A_j by L_k",
+        "A semantic predicate is a model instrument used to represent statements in the RDF Data Model"
     ]
 }
