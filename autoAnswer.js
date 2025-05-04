@@ -9,7 +9,7 @@ fetch(chrome.runtime.getURL('answers.json'))
   
   function normalizeQuestion(text) {
     return text
-      .replace(/\s*[-–—]\s*Please.*$/i, '')
+      .replace(/\s*[-–—]\s*please.*$/i, '') 
       .replace(/\s*\([\s\S]*?\)$/i, '')
       .replace(/Please.*$/i, '')
       .replace(/\s+/g, ' ')
