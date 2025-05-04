@@ -7,14 +7,14 @@ fetch(chrome.runtime.getURL('answers.json'))
     waitUntilRendered();
   });
   
-  function normalizeQuestion(text) {
+function normalizeQuestion(text) {
     return text
       .replace(/\s*[-–—]\s*please.*$/i, '') 
+    //   .replace(/\s*[-–—]\s*please.*$/i, '') 
       .replace(/\s*\([\s\S]*?\)$/i, '')
-      .replace(/Please.*$/i, '')
-      .replace(/\s+/g, ' ')
+    //   .replace(/\s+/g, ' ')
       .trim();
-  }  
+}
   
 function autoAnswer() { 
     const questions = document.querySelectorAll('div.que');
