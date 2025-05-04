@@ -135,8 +135,8 @@
     ],
 
     "What is the difference between Natural Join and Theta Join?": [
-        "Natural Join returns the set of all combinations of tuples that are equal on their shared attributes. Theta Join does so, but for the cases when theta function holds true for the shared attributes",
-        "Theta Join does not require that the shared attributes are named the same, while Natural Join requires that"
+        "Natural Join returns the set of all combinations of tuples that are equal on their shared attributes. Theta Join does so, but for the cases when theta function holds true for the shared attributes.",
+        "Theta Join does not require that the shared attributes are named the same, while Natural Join requires that.   "
     ],
 
     "What is a Data Model?": [

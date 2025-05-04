@@ -16,7 +16,7 @@ fetch(chrome.runtime.getURL('answers.json'))
       .trim();
   }  
   
-function autoAnswer() {
+function autoAnswer() { 
     const questions = document.querySelectorAll('div.que');
     if (!questions.length) return false;
 
